@@ -12,7 +12,7 @@ Orange Box App es una aplicación frontend desarrollada en Next.js, que interact
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/orange-box-frontend.git
+   git clone https://github.com/Alfaro-dev/orange-box-app.git
    cd orange-box-frontend
    ```
 
