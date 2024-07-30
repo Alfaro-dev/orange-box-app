@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Orange Box App
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Orange Box App es una aplicación frontend desarrollada en Next.js, que interactúa con la API de Orange Box para gestionar productos y proveedores.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Requisitos Previos
+
+- Node.js y npm
+
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/orange-box-frontend.git
+   cd orange-box-frontend
+   ```
+
+2. Instalar dependencias de Node.js:
+   ```bash
+   npm install
+   ```
+
+3. Crear un archivo `.env.local` con la configuración necesaria:
+   ```dotenv
+   NEXT_PUBLIC_API_URL=http://localhost
+   ```
+
+4. Iniciar la aplicación:
+   ```bash
+   npm run dev
+   ```
+
+## Estructura del Proyecto
+
+```
+orange-box-frontend/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── globals.css
+│   │   ├── page.tsx
+│   │   └── products/
+│   │       ├── add-product.tsx
+│   │       ├── edit-product.tsx
+│   │       └── index.tsx
+│   ├── components/
+│   │   ├── ProductForm.tsx
+│   │   ├── ProductList.tsx
+│   │   ├── ProviderForm.tsx
+│   │   └── ProviderList.tsx
+│   ├── ducks/
+│   │   ├── products/
+│   │   │   ├── actions.ts
+│   │   │   ├── reducer.ts
+│   │   │   ├── types.ts
+│   │   ├── providers/
+│   │   │   ├── actions.ts
+│   │   │   ├── reducer.ts
+│   │   │   ├── types.ts
+│   │   ├── store.ts
+│   ├── pages/
+│   └── utils/
+├── public/
+├── styles/
+├── .env.local
+├── package.json
+├── postcss.config.js
+└── tailwind.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Despliegue
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El proyecto ha sido desplegado exitosamente en Render y puede ser accedido en la siguiente URL:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Orange Box App](https://orange-box-app.onrender.com)
